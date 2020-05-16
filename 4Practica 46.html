@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 46-->
+
+<head>
+    <title>Practica 46</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        var premio;
+        var alea = [];
+        var numbers = 0;
+        var f;
+        do {
+            premio = parseInt(Math.random() * 1000);
+            alea[premio] = 1000 * (numbers + 1);
+            numbers++;
+        } while (numbers != 11);
+        for (f = 0; f < alea.length; f++) {
+            if (alea[f] !== undefined) {
+                document.write('El numero ganador es:' + f + 'y su permio es:' + alea[f] + '<br>');
+            }
+        }
+        document.write('<br>');
+        document.write('<br>');
+        document.write('<br>');
+        document.write('Honestamente es super cool esto.');
+    </script>
+</body>
+
+</html>
